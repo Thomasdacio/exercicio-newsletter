@@ -1,0 +1,141 @@
+/* <------ TABLET ------> */
+
+@media (max-width: 965px) {
+
+    .container-formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--white);
+        max-width: 55rem;
+        border-radius: 3rem;
+        position: relative;
+    }
+
+    .container-formulario picture {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .container-formulario .informacoes-texto {
+        margin: 30rem 0 3rem;
+        padding: 0 2rem;
+    }
+
+}
+
+/* <------ MOBILE -------> */
+
+@media (max-width: 500px) {
+
+    .container-formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--white);
+        width: 37.5rem;
+        border-radius: 0rem;
+        position: relative;
+    }
+
+    .container-formulario picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .informacoes-texto .texto {
+        padding: 0;
+        transform: translatex(-1.5rem);
+    }
+
+    .container-formulario .titulo {
+        font-size: 3.7rem;
+    }
+
+    .container-formulario .descricao {
+        font-size: 1.6rem;
+    }
+
+    .texto .lista-beneficios li {
+        display: flex;
+    }
+
+    .texto .lista-beneficios img {
+        transform: translatey(-1rem);
+    }
+
+    .texto .lista-beneficios .ultimo-icone {
+        transform: translatey(0)
+    }
+
+    .texto .lista-beneficios span {
+        font-size: 1.6rem;
+        padding-left: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    .campo-preenchimento {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        transform: translatex(-1.5rem);
+    }
+
+    .campo-preenchimento input {
+        width: 32.5rem;
+        height: 5.5rem;
+        border-radius: 1rem;
+        padding: 2.4rem;
+        font-size: 1.6rem;
+        border: 1px solid var(--grey);
+        margin-bottom: 2.5rem;
+    }
+
+    .campo-preenchimento .botao,
+    .container-confirmacao .botao-2 {
+        width: 32.5rem;
+        height: 5.5rem;
+        border-radius: 1rem;
+        background-color: var(--blue-800);
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: 700;
+        transition: ease-in-out 0.3s;
+        cursor: pointer;
+    }
+
+    .container-confirmacao {
+        display: none;
+        flex-direction: column;
+        background-color: var(--white);
+        height: 100vh;
+        padding: 5rem 7rem;
+        border-radius: 0rem;
+    }
+
+    .conteudo {
+        margin-top: 10rem;
+    }
+
+    .conteudo .titulo-2 {
+        font-size: 3.8rem;
+        line-height: 4rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .conteudo .mensagem {
+        font-size: 1.5rem;
+        margin-bottom: 26rem;
+    }
+
+    .campo-preenchimento .texto-formulario .mensagem-erro {
+    display: block;
+    padding: 0;
+    color: var(--red);
+    transform: translatex(3rem);
+}
+
+}

@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
+  <link rel="stylesheet" href="/src/css/reset.css">
+  <link rel="stylesheet" href="/src/css/variables.css">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="/src/css/responsive.css">
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main>
+    <section class="container-formulario" id="container-form">
 
-  <!-- Sign-up form start -->
+      <form id="form" novalidate>
 
-  Stay updated!
+        <div class="informacoes-texto">
 
-  Join 60,000+ product managers receiving monthly updates on:
+          <div class="texto">
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+            <h1 class="titulo">Stay updated!</h1>
+            <p class="descricao">Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="lista-beneficios">
+              <li>
+                <img src="/src/images/icon-list.svg" alt="Ícone lista">
+                <span>Product discovery and building what matters</span>
+              </li>
+              <li>
+                <img src="/src/images/icon-list.svg" alt="Ícone lista">
+                <span>Measuring to ensure updates are a success</span>
+              </li>
+              <li>
+                <img class="ultimo-icone" src="/src/images/icon-list.svg" alt="Ícone lista">
+                <span>And much more!</span>
+              </li>
+            </ul>
+          </div>
 
-  Email address
-  email@company.com
+          <div class="campo-preenchimento">
 
-  Subscribe to monthly newsletter
+            <div class="texto-formulario">
+              <span class="titulo-input">Email address</span>
+              <span class="mensagem-erro desativado" id="mensagem">Valid email required</span>
+            </div>
 
-  <!-- Sign-up form end -->
+            <input type="email" id="email" placeholder="email@company.com" required>
+            <button class="botao" id="btn" type="submit">Subscribe to monthly newsletter</button>
 
-  <!-- Success message start -->
+          </div>
 
-  Thanks for subscribing!
+        </div>
+      </form>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+      <picture>
+        
+        <source media="(max-width: 500px)" srcset="/src/images/illustration-sign-up-mobile.svg">
 
-  Dismiss message
+        <source media="(max-width: 965px)" srcset="/src/images/illustration-sign-up-tablet.svg">
 
-  <!-- Success message end -->
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+        <img src="/src/images/illustration-sign-up-desktop.svg" alt="Ilustração">
+      </picture>
+
+    </section>
+
+    <section class="container-confirmacao" id="confirmacao">
+      <div class="conteudo">
+        <img src="/src/images/icon-success.svg" alt="Ícone sucesso">
+
+        <h1 class="titulo-2">Thanks for subscribing!</h1>
+
+        <p class="mensagem">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it
+          and click the button inside to confirm your subscription.</p>
+
+        <button class="botao-2">Dismiss message</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/src/js/main.js"></script>
+
 </body>
+
 </html>
