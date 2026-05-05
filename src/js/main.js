@@ -3,6 +3,7 @@ const containerConfirmacao = document.getElementById("confirmacao")
 const formulario = document.getElementById("form");
 const mensagemErro = document.getElementById("mensagem");
 const email = document.getElementById("email");
+const emailDigitado = document.getElementById("email-digitado");
 
 formulario.addEventListener("submit", (e) => {
 
@@ -22,4 +23,5 @@ formulario.addEventListener("submit", (e) => {
 
     containerForm.classList.toggle("escondido");
     containerConfirmacao.classList.toggle("confirmado");
+    emailDigitado.textContent = email.value;
 });
